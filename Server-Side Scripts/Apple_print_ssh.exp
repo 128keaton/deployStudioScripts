@@ -1,0 +1,12 @@
+spawn ssh apple@10.0.2.252
+expect "yes/no"
+send "yes\r"
+expect "word:"
+send "apple\r"
+expect "$"
+send "lpr -P ZP450 AppleInfo.txt\r"
+expect "$"
+send "rm AppleInfo.txt\r"
+expect "$"
+send "exit\r"
+

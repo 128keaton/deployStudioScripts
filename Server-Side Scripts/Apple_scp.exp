@@ -1,0 +1,6 @@
+spawn scp /Volumes/Untitled/AppleInfo.txt apple@10.0.2.252:AppleInfo.txt
+expect "yes/no"
+send "yes\r"
+expect "word:"
+send "apple\r"
+expect "100%"
